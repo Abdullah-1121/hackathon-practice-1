@@ -22,10 +22,10 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create base directories: `backend/src`, `backend/tests`, `frontend/`, `frontend/src`, `frontend/src/theme`, `frontend/tests`, `scripts`, `.github/workflows`
-- [ ] T002 Initialize backend Python project with `uv` and `fastapi[standard]` in `backend/pyproject.toml` (Use `rag-backend` skill)
-- [ ] T003 Initialize frontend Docusaurus project in `frontend/` and configure base settings (e.g., site title "Cybernetic Book Documentation") (Use `docusaurus-expert` skill)
-- [ ] T004 [P] Configure basic linting and formatting for both frontend and backend (`backend/.flake8`, `frontend/.eslintrc.js`)
+- [X] T001 Create base directories: `backend/src`, `backend/tests`, `frontend/`, `frontend/src`, `frontend/src/theme`, `frontend/tests`, `scripts`, `.github/workflows`
+- [X] T002 Initialize backend Python project with `uv` and `fastapi[standard]` in `backend/pyproject.toml` (Use `rag-backend` skill)
+- [X] T003 Initialize frontend Docusaurus project in `frontend/` and configure base settings (e.g., site title "Cybernetic Book Documentation") (Use `docusaurus-expert` skill)
+- [X] T004 [P] Configure basic linting and formatting for both frontend and backend (`backend/.flake8`, `frontend/.eslintrc.js`)
 
 **Checkpoint**: Base project structure and configuration are set up.
 
@@ -35,10 +35,10 @@
 
 **Purpose**: Populate the Docusaurus site with initial content.
 
-- [ ] T005 Delete default Docusaurus tutorial files in `frontend/docs/tutorial-basics/` and `frontend/docs/tutorial-guides/` (Use `ghost-writer` subagent)
-- [ ] T006 Generate "01-introduction.md" in `frontend/docs/` (Use `ghost-writer` subagent)
-- [ ] T007 Generate "02-variables.md" in `frontend/docs/` (Use `ghost-writer` subagent)
-- [ ] T008 Generate "03-loops.md" in `frontend/docs/` (Use `ghost-writer` subagent)
+- [X] T005 Delete default Docusaurus tutorial files in `frontend/docs/tutorial-basics/` and `frontend/docs/tutorial-guides/` (Use `ghost-writer` subagent)
+- [X] T006 Generate "01-introduction.md" in `frontend/docs/` (Use `ghost-writer` subagent)
+- [X] T007 Generate "02-variables.md" in `frontend/docs/` (Use `ghost-writer` subagent)
+- [X] T008 Generate "03-loops.md" in `frontend/docs/` (Use `ghost-writer` subagent)
 
 **Checkpoint**: Initial Docusaurus content has been created and organized.
 
@@ -50,11 +50,11 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T009 Create `backend/src/api/main.py` for FastAPI application
-- [ ] T010 Implement basic FastAPI app structure (import router, create app instance) in `backend/src/api/main.py`
-- [ ] T011 Implement Qdrant client connection utility in `backend/src/services/qdrant_client.py`
-- [ ] T012 Implement Google Gemini embedding client utility in `backend/src/services/gemini_client.py`
-- [ ] T013 Create base Pydantic models for request/response in `backend/src/models/` (e.g., `Message`, `ChatRequest`)
+- [X] T009 Create `backend/src/api/main.py` for FastAPI application
+- [X] T010 Implement basic FastAPI app structure (import router, create app instance) in `backend/src/api/main.py`
+- [X] T011 Implement Qdrant client connection utility in `backend/src/services/qdrant_client.py` (Use `rag-backend` skill)
+- [X] T012 Implement Google Gemini embedding client utility in `backend/src/services/gemini_client.py`
+- [X] T013 Create base Pydantic models for request/response in `backend/src/models/` (e.g., `Message`, `ChatRequest`)
 
 **Checkpoint**: Foundational backend services are ready - user story implementation can now begin.
 
