@@ -1,9 +1,12 @@
 import os
+
+from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 
-def get_qdrant_client():
-    client = QdrantClient(
-        url=os.getenv("QDRANT_URL"),
-        api_key=os.getenv("QDRANT_API_KEY"),
-    )
-    return client
+load_dotenv()
+
+# Initialize the client
+qdrant_client = QdrantClient(
+    url=os.getenv("QDRANT_HOST"),
+    api_key=os.getenv("QDRANT_API_KEY"),
+)
