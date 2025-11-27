@@ -1,16 +1,25 @@
 [project]
 name = "living-book-backend"
 version = "0.1.0"
+description = "RAG Backend for the Living Book"
+readme = "README.md"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]",
     "qdrant-client",
     "google-generativeai",
     "uvicorn",
+    "python-dotenv",
+    "pydantic"
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.uv]
-requires-python = ">=3.12"
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

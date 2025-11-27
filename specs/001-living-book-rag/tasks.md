@@ -68,17 +68,17 @@
 
 ### Implementation for User Story 1
 
-- [ ] T014 [P] [US1] Swizzle Docusaurus Root component at `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
-- [ ] T015 [P] [US1] Implement global `mouseup` event listener in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
-- [ ] T016 [P] [US1] Implement logic to detect text selection (`window.getSelection().toString()`) in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
-- [ ] T017 [P] [US1] Implement rendering of Floating Action Button (FAB) near mouse cursor when text is selected in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
-- [ ] T018 [US1] Implement FAB click handler to open ChatKit widget and inject selected text as context in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
-- [ ] T019 [US1] Implement pre-filling ChatKit user input with "Explain this context: ..." in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
-- [ ] T020 [US1] Implement `/api/chat` endpoint (POST) in `backend/src/api/main.py` to handle RAG requests (Use `rag-backend` skill)
-- [ ] T021 [US1] Implement RAG logic to receive user query + optional selected text in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
-- [ ] T022 [US1] Implement RAG logic to convert query/text to vector using Google Gemini in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
-- [ ] T023 [US1] Implement RAG logic to query Qdrant for top 3 relevant book chunks in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
-- [ ] T024 [US1] Implement RAG logic to synthesize final answer using LLM in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
+- [X] T014 [P] [US1] Swizzle Docusaurus Root component at `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
+- [X] T015 [P] [US1] Implement global `mouseup` event listener in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
+- [X] T016 [P] [US1] Implement logic to detect text selection (`window.getSelection().toString()`) in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
+- [X] T017 [P] [US1] Implement rendering of Floating Action Button (FAB) near mouse cursor when text is selected in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
+- [X] T018 [US1] Implement FAB click handler to open ChatKit widget and inject selected text as context in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
+- [X] T019 [US1] Implement pre-filling ChatKit user input with "Explain this context: ..." in `frontend/src/theme/Root.js` (Use `docusaurus-expert` skill)
+- [X] T020 [US1] Implement `/api/chat` endpoint (POST) in `backend/src/api/main.py` to handle RAG requests (Use `rag-backend` skill)
+- [X] T021 [US1] Implement RAG logic to receive user query + optional selected text in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
+- [X] T022 [US1] Implement RAG logic to convert query/text to vector using Google Gemini in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
+- [X] T023 [US1] Implement RAG logic to query Qdrant for top 3 relevant book chunks in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
+- [X] T024 [US1] Implement RAG logic to synthesize final answer using LLM in `backend/src/services/rag_service.py` (Use `rag-backend` skill)
 
 **Checkpoint**: User Story 1 (Read with AI Context) is fully functional and testable independently.
 
@@ -92,8 +92,8 @@
 
 ### Implementation for User Story 2
 
-- [ ] T025 [US2] Ensure ChatKit widget can be opened for general queries (e.g., via a static button, if not already handled by T018) in `frontend/src/components/ChatWidgetToggle.js` (Use `docusaurus-expert` skill)
-- [ ] T026 [US2] Ensure `/api/chat` endpoint in `backend/src/api/main.py` and `backend/src/services/rag_service.py` correctly handles general queries (without selected text) (Use `rag-backend` skill)
+- [X] T025 [US2] Ensure ChatKit widget can be opened for general queries (e.g., via a static button, if not already handled by T018) in `frontend/src/components/ChatWidgetToggle.js` (Use `docusaurus-expert` skill)
+- [X] T026 [US2] Ensure `/api/chat` endpoint in `backend/src/api/main.py` and `backend/src/services/rag_service.py` correctly handles general queries (without selected text) (Use `rag-backend` skill)
 
 **Checkpoint**: User Stories 1 AND 2 are both functional and testable independently.
 
@@ -107,10 +107,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T027 [US3] Configure Docusaurus sidebar to autogenerate from `/docs` in `frontend/docusaurus.config.js` (Use `docusaurus-expert` skill)
-- [ ] T028 [US3] Configure Docusaurus navbar with links to "Chapters", "About", and "GitHub Repo" in `frontend/docusaurus.config.js` (Use `docusaurus-expert` skill)
-- [ ] T029 [US3] Apply custom color scheme (e.g., #2e8555) in `frontend/src/css/custom.css` (Use `docusaurus-expert` skill)
-- [ ] T030 [US3] Verify ChatKit widget persistence across navigation (already implicitly handled by `Root.js` swizzling in T014) - *No additional code needed, just verification.*
+- [X] T027 [US3] Configure Docusaurus sidebar to autogenerate from `/docs` in `frontend/docusaurus.config.js` (Use `docusaurus-expert` skill)
+- [X] T028 [US3] Configure Docusaurus navbar with links to "Chapters", "About", and "GitHub Repo" in `frontend/docusaurus.config.js` (Use `docusaurus-expert` skill)
+- [X] T029 [US3] Apply custom color scheme (e.g., #2e8555) in `frontend/src/css/custom.css` (Use `docusaurus-expert` skill)
+- [X] T030 [US3] Verify ChatKit widget persistence across navigation (already implicitly handled by `Root.js` swizzling in T014) - *No additional code needed, just verification.*
 
 **Checkpoint**: All user stories are independently functional and testable.
 
@@ -120,12 +120,12 @@
 
 **Purpose**: Index the book's content into Qdrant for RAG. (Use `rag-backend` skill)
 
-- [ ] T031 Create `scripts/index_book.py` script
-- [ ] T032 Implement scanning of `.md` files in `/docs` within `scripts/index_book.py`
-- [ ] T033 Implement text chunking by headers (##) or paragraphs (approx 500 tokens) in `scripts/index_book.py`
-- [ ] T034 Implement Google Gemini API calls for embedding with `time.sleep(1)` rate limiting in `scripts/index_book.py`
-- [ ] T035 Implement upserting vectors + metadata (Chapter Title, Page URL) to Qdrant in `scripts/index_book.py`
-- [ ] T036 Implement `/api/index` admin endpoint (POST) in `backend/src/api/main.py` to trigger the `index_book.py` script (Use `rag-backend` skill)
+- [X] T031 Create `scripts/index_book.py` script
+- [X] T032 Implement scanning of `.md` files in `/docs` within `scripts/index_book.py`
+- [X] T033 Implement text chunking by headers (##) or paragraphs (approx 500 tokens) in `scripts/index_book.py`
+- [X] T034 Implement Google Gemini API calls for embedding with `time.sleep(1)` rate limiting in `scripts/index_book.py`
+- [X] T035 Implement upserting vectors + metadata (Chapter Title, Page URL) to Qdrant in `scripts/index_book.py`
+- [X] T036 Implement `/api/index` admin endpoint (POST) in `backend/src/api/main.py` to trigger the `index_book.py` script (Use `rag-backend` skill)
 
 **Checkpoint**: The data pipeline is complete and the book can be indexed.
 
@@ -135,11 +135,28 @@
 
 **Purpose**: Automate deployment to GitHub Pages.
 
-- [ ] T037 Create `.github/workflows/deploy.yml` for GitHub Actions
-- [ ] T038 Configure `deploy.yml` to build Docusaurus (`npm run build`) on push to `main`
-- [ ] T039 Configure `deploy.yml` to deploy to `gh-pages` branch on push to `main`
+- [X] T037 Create `.github/workflows/deploy.yml` for GitHub Actions
+- [X] T038 Configure `deploy.yml` to build Docusaurus (`npm run build`) on push to `main`
+- [X] T039 Configure `deploy.yml` to deploy to `gh-pages` branch on push to `main`
 
 **Checkpoint**: Deployment workflow is set up and ready.
+
+---
+
+## Phase 8: Testing (Backend)
+
+**Purpose**: Implement unit and integration tests for backend components using `pytest`.
+
+- [X] T040 Write failing `pytest` for `/api/chat` endpoint in `backend/tests/test_api.py` (Use `rag-backend` skill)
+- [X] T041 Implement passing test for `/api/chat` endpoint (Use `rag-backend` skill)
+- [X] T042 Write failing `pytest` for `/api/index` endpoint in `backend/tests/test_api.py` (Use `rag-backend` skill)
+- [X] T043 Implement passing test for `/api/index` endpoint (Use `rag-backend` skill)
+- [X] T044 Write failing `pytest` for `rag_service.py` with context in `backend/tests/test_rag_service.py` (Use `rag-backend` skill)
+- [X] T045 Implement passing test for `rag_service.py` with context (Use `rag-backend` skill)
+- [X] T046 Write failing `pytest` for `rag_service.py` without context in `backend/tests/test_rag_service.py` (Use `rag-backend` skill)
+- [X] T047 Implement passing test for `rag_service.py` without context (Use `rag-backend` skill)
+
+**Checkpoint**: All backend functionalities have corresponding `pytest` tests.
 
 ---
 
